@@ -1,6 +1,5 @@
 import { ethers } from "hardhat";
 import {Depositer__factory} from "../typechain-types";
-import { deployContract } from "@nomicfoundation/hardhat-ethers/types";
 async function main() {
     const signers = await ethers.getSigners();
     const signer = signers[0];
