@@ -23,7 +23,9 @@ contract ERC20{
     
 
 
-    
+    function getBalance(address user)public view returns(uint256){
+        return balances[user];
+    }
 
     function getName()public view returns(string memory){
         return name;
