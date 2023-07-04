@@ -22,4 +22,9 @@ contract Depositer{
         emit Withdraw(userBalance, msg.sender);
         
     }
+
+
+    function getBalance(address user) public view returns(uint256){
+        return balances[user];
+    } 
 }
