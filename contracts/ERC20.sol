@@ -17,11 +17,10 @@ contract ERC20{
     mapping (address=>uint256) balances;
     event StartVoting(uint256 startTime, uint256 finishTime, address voter);
     event EndOfVoting(uint256 result);
-    constructor(address _owner, string memory _name, string memory _symbol, uint256 _voteVoice){
+    constructor(address _owner, string memory _name, string memory _symbol){
         owner=_owner;
         name=_name;
         symbol=_symbol;
-        voteVoice=_voteVoice;
         balances[owner]=1000;
     }
 
