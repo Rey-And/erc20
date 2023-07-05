@@ -69,11 +69,11 @@ contract ERC20{
         return result;
     }
 
-    function getVote1()public view returns(uint256){
+    function getPositiveVote()public view returns(uint256){
         return positiveVote;
     }
 
-    function getVote2()public view returns(uint256){
+    function getNegativeVote()public view returns(uint256){
         return negativeVote;
     }
 
